@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Choisissez le dé que vous souhaitez lancer."
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/btn_6"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_20"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btn_20"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_weight="1"
+        android:text="6 Sided Dice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/de6"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+    <Button
+        android:id="@+id/btn_20"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="20 Sided Dice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_8"
+        app:layout_constraintTop_toBottomOf="@+id/btn_8"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <ImageView
+        android:id="@+id/de6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btn_6"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:srcCompat="@drawable/de6" />
+
+    <ImageView
+        android:id="@+id/d20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/de6"
+        android:layout_alignTop="@+id/btn_20"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/de8"
+        app:layout_constraintTop_toBottomOf="@+id/de8"
+        app:srcCompat="@drawable/de20"
+        android:layout_alignLeft="@+id/de6" />
+
+    <ImageView
+        android:id="@+id/de8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/de6"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/de6"
+        app:layout_constraintTop_toBottomOf="@+id/de6"
+        app:srcCompat="@drawable/de8"
+        android:layout_alignLeft="@+id/de6" />
+
+    <Button
+        android:id="@+id/btn_8"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_6"
+        android:layout_alignTop="@+id/de8"
+        android:layout_marginTop="12dp"
+        android:text="8 Sided Dice"
+        app:layout_constraintStart_toStartOf="@+id/btn_6"
+        app:layout_constraintTop_toBottomOf="@+id/btn_6"
+        android:layout_alignLeft="@+id/btn_6" />
+
+</android.support.constraint.ConstraintLayout>
