@@ -8,16 +8,26 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn6,btn20,btn8;
+    private Button btn4, btn6,btn20,btn8, btn10, btn12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btn4 = findViewById(R.id.btn4);
         btn6 = findViewById(R.id.btn_6);
         btn8 = findViewById(R.id.btn_8);
+        btn10 = findViewById(R.id.btn10);
+        btn12 = findViewById(R.id.btn12);
         btn20 = findViewById(R.id.btn_20);
+
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                page(4);
+            }
+        });
 
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +40,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 page(8);
+            }
+        });
+
+        btn10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                page(10);
+            }
+        });
+
+        btn12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                page(12);
             }
         });
 
